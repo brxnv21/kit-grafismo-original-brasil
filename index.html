@@ -101,6 +101,10 @@ a {
   max-width: 56rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -807,6 +811,30 @@ details p {
   }
 }
 
+@media (min-width: 1024px) {
+
+  .lg-py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .hero h1 {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-product img {
+    width: min(500px, 42vw) !important;
+  }
+
+  .hero-product {
+    box-shadow:
+      0 20px 50px -12px rgba(0,0,0,.5),
+      0 0 60px rgba(168,85,247,.35) !important;
+  }
+}
+
 </style>
 </head>
 
@@ -865,7 +893,7 @@ details p {
 
 
   <div
-    class="relative max-w-5xl mx-auto px-4 py-6 sm-py-12 text-center"
+    class="relative max-w-5xl mx-auto px-4 py-6 sm-py-12 lg-py-24 text-center"
   >
 
     <span
@@ -876,7 +904,8 @@ details p {
 
 
     <div
-      style="background:#fff;border-radius:1.25rem;padding:16px;box-shadow:0 20px 50px -12px rgba(0,0,0,.5);display:inline-block;margin-top:28px;"
+      class="hero-product"
+      style="background:#fff;border-radius:1.25rem;padding:16px;box-shadow:0 20px 50px -12px rgba(0,0,0,.5);display:block;width:fit-content;margin:28px auto 0;"
     >
       <img
         src="imagens/mockup.webp"
